@@ -1,0 +1,22 @@
+p{
+    color: blue;
+    width: 400px;
+    font-size: 32px; /* TAMANHO DA FONTE PODE SER REM.. */
+    font-weight: bold;/* peso da fonte*/
+    font-style: italic;
+    text-transform: ;/* tudo maiusculo por exemplo*/
+    text-align: center;/* alinha o texto*/
+    text-shadow: 2px 2px 5px black;/* sombra no texto o primeiro px(direira) o segundo(baixo) terceiro(embaça)*/
+    text-indent: 150px;/* pparagrafo*/
+    letter-spacing: 2px;/* espaço entre as letras*/
+
+}
+a{
+    text-decoration: none; /* remove o sublinhada que vem por padrao*/
+
+}
+ul{
+    list-style: none; /* remove as bolinhas que vem por padrao*/
+    list-style: circle;/* eu escolho o tipo de bolinha*/
+    list-style-image: url(./) ;/* pode ser uma imagem*/
+}
