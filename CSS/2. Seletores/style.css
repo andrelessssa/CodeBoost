@@ -3,7 +3,13 @@
 seletores(o que vou dar estilo) / chaves(abro e fecho) / 
 declaracoes / propriedade + valor  */
 
-/* seletor*/body{
+
+
+
+
+
+/* seletor* de eu colocar um seletor 
+"*"ele vai aplicar pra tudo na pagina /body{
     background-color: rgb(144, 194, 239);
 }
 h1{
@@ -25,8 +31,9 @@ fica mais facil manipular as coisas
 */
 
 .esquerda button { /* quero crias declaracoes do botao da 
-                      div Direita */
+                      div esquerda */
     background-color: blueviolet;
+   
 
 }
 .direita button{
@@ -47,4 +54,29 @@ a{
     color: blue;
     font-weight: 500;
     text-decoration: none;
+}
+button {
+    width: 120px;
+    height: 40px;
+}
+
+.btn-enviar.btn-cadastrar{
+    background-color: black;
+    color: white;
+    border-radius: 20px ;
+}
+.btn-cadastrar:hover{
+    background-color: black; 
+}
+ol li{
+    color: blueviolet;
+}
+ol li:nth-child(3){
+    color: blue;
+}
+ol li:first-child{
+    color: black;
+}
+ol li:last-child{
+    color: aqua;
 }
