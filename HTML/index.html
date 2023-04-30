@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBoost</title>
+</head>
+<body>
+    <!--DIA 29/04/23-->
+    <h1>Tabela</h1>
+
+    <ul><!--Monta uma lista-->
+        <li>css</li><!--linha da lista-->
+        <li>HTML</li>
+    </ul>
+
+    <ol><!--lista ordenada-->
+        <li>css</li><!--linha da lista-->
+        <li>HTML</li>
+    </ol>
+  
+    <table><!--criar tabela-->
+        <thead><!--cabeçalho dela-->
+            <tr><!--linha da tabela-->
+                <th>Pruduto</th><!--itens do cabeçlho-->
+                <th>Preço</th>
+                <th>Frete</th>
+            </tr>
+        </thead>
+       
+        <tbody><!--corpo da tabela-->
+            <tr><!--linha da tabela-->
+                <td>Computador</td><!--itens do cabeçlho-->
+                <td>500,00</td>
+                <td>Grátis</td>
+            </tr>
+
+            <tr><!--outra linha-->
+                <td>Camera</td><!--itens do cabeçlho-->
+                <td>200,00</td>
+                <td>Grátis</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--elementos ESTRUTURAL tem que ta para as buscas no google
+        isso é o SEO
+    DIV = fazer separaçoes 
+    SPAN = destacar uma palavra por exemplo
+    SECTION = seçao a diferença pra div é que o google vai ler a seçao
+    HEADER = inicia o zite
+    FOOTER = rodapé finaliza
+    NAV = ali esta as nevagacoes do site
+
+    
+    -->
+
+    <div><!--Exemplo-->
+        <h2>Conteudo da esquerda</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quae eum ea itaque ratione, est obcaecati magnam fuga libero vero doloremque cum harum officiis eligendi delectus, nisi aliquam porro explicabo!</p>
+        <button>Botão</button>
+    </div>
+    <div><!--Exemplo-->
+        <h2>Conteudo da Direita</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quae eum ea itaque ratione, est obcaecati magnam fuga libero vero doloremque cum harum officiis eligendi delectus, nisi aliquam porro explicabo!</p>
+        <button>Botão</button>
+    </div>
+
+    <!--FORMULARIOS-->
+     <!--
+        FORM =
+        LABEL =
+        
+        -->
+        <br>
+        <form action="">
+            <label for="input-nome">Nome</label><!--o for ele referencia o id-->
+            <input name="nome" id="input-nome" type="text"><!--o id para ser chamado pelo for-->
+
+            <label for="input-email">Email</label>
+            <input name="email" id="input-email" type="email">
+
+            <label for="input-numero">Numero</label>
+            <input name="numero" id="input-numero" type="number">
+
+            <label for="input-senha">Senha</label>
+            <input name="senha" id="input-senha" type="password">
+
+            <label for="input-msn">Mensagem</label>
+            <textarea name="msg" id="input-msn" cols="30" rows="10"></textarea>
+
+            <button type="submit">Enviar</button><!--o botao so vai funcionar se nos 
+            campos tiver os atributos nome que pode ser o mesmo do id o que nao pode 
+            é no ter outro campo com o mesmo id-->
+
+        </form>
+
+
+    
+</body>
+</html>
