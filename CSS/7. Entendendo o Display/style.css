@@ -1,0 +1,16 @@
+.quadrado{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    /* display: inline;    ele sai do default e coloca lado a lado  
+    nao pega margin nem altura nem largura*/
+    display: block;
+
+}
+.quadrado.red1{
+    background-color: brown;
+    
+}
+.quadrado.blue1{
+    background-color: blue;
+}
