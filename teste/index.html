@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+<body>
+    <h1>Informe seus dados:</h1>
+    
+    <form id="formulario">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+        </div>
+        <div>
+            <button type="submit">Salvar</button>
+        </div>
+    </form>
+
+    <script>
+        // Função para salvar uma pessoa no localStorage
+        function salvarPessoa() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const idade = document.getElementById('idade').value;
+
+            // Verifica se já existem pessoas salvas no localStorage
+            const pessoasSalvas = localStorage.getItem('pessoas');
+            let pessoas = [];
+
+            if (pessoasSalvas) {
+                pessoas = JSON.parse(pessoasSalvas);
+            }
+
+            // Adiciona a nova pessoa à lista
+            pessoas.push({ nome, email, idade });
+
+            // Salva a lista atualizada no localStorage
+            localStorage.setItem('pessoas', JSON.stringify(pessoas));
+
+            // Limpa os campos do formulário
+            document.getElementById('nome').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('idade').value = '';
+
+            // Redireciona para a página de visualização das pessoas
+            window.location.href = 'outra_pagina.html';
+        }
+
+        // Evento de envio do formulário
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do formulário
+            salvarPessoa();
+        });
+    </script>
+</body>
+</html>

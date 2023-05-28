@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outra Página</title>
+</head>
+<body>
+    <h1>Dados dos Usuários:</h1>
+    
+    <div id="pessoas"></div>
+
+    <script>
+        // Obtém as pessoas salvas do localStorage
+        const pessoasSalvas = localStorage.getItem('pessoas');
+        let pessoas = [];
+
+        if (pessoasSalvas) {
+            pessoas = JSON.parse(pessoasSalvas);
+        }
+
+        // Exibe os dados das pessoas na página
+        const pessoasContainer = document.getElementById('pessoas');
+
+        pessoas.forEach(pessoa => {
+            const nome = pessoa.nome;
+            const email = pessoa.email;
+            const idade = pessoa.idade;
+
+            const pessoaDiv = document.createElement('div');
+            pessoaDiv.innerHTML = `
+                <h3>Nome: ${nome}</h3>
+                <p>Email: ${email}</p>
+                <p>Idade: ${idade}</p>
+                <hr>
+            `;
+
+            pessoasContainer.appendChild(pessoaDiv);
+        });
+    </script>
+</body>
+</html>
